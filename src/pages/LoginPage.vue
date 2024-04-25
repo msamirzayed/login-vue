@@ -34,7 +34,7 @@
               <v-btn
                 type="submit"
                 color="primary"
-                :disabled="!email || !password || emailError || passwordError"
+                :disabled="!email || !password || emailError || passwordError || !userName"
               >
                 {{ isLoginMode ? "Login" : "Signup" }}
               </v-btn>
